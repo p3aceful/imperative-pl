@@ -1,0 +1,17 @@
+println (
+    reset(
+        fun() {
+            println("Starting...");
+            var x = shift(
+                fun(k) {
+                    var a = k(1);
+                    println(a);
+                    k(2);
+                    return k;
+                }
+            ) + 10;
+            println(x);
+            return x+100;
+        }
+    )(1000)
+);

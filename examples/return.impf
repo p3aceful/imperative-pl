@@ -1,0 +1,14 @@
+var isBig = fun(a) {
+    var b = ref 5;
+
+    if (a > *b) {
+        return "That is a big number!";
+    }
+    else {
+        return "That is very smole number.";
+    }
+};
+
+var foo = isBig(6);
+
+println(foo);

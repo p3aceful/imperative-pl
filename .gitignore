@@ -1,0 +1,7 @@
+*.md
+*.cabal
+kladd.txt
+LICENSE
+.cabal-sandbox
+dist
+*.config

@@ -1,0 +1,12 @@
+// defining and calling a function
+// passing a reference parameter
+var x = ref 1;
+
+var f = fun (a, res) {
+  res = *res + a;  
+};
+
+f(1, x);
+
+println(*x);
+if (*x == 2) println("OK"); else println("Fail");

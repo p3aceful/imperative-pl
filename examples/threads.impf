@@ -1,0 +1,20 @@
+var loop = fun(n) {var c = ref 0; while (*c < n) c = *c + 1; };
+
+println("main thread starting");
+
+var tid1 = spawn(fun () {
+    println("thread 1 starting");
+    loop(1000);
+    println("thread 1 ending");
+});
+detach(tid1);
+
+var tid2 = spawn(fun () {
+    println("thread 2 starting");
+    loop(100);
+    println("thread 2 ending");
+});
+
+join(tid2);
+
+println("main thread ending ");

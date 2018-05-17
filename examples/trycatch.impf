@@ -1,0 +1,15 @@
+var a = fun(number) {
+    try {
+        if (number < 5) throw "very smol!"; else;
+        println("very bige!");
+    } catch (e) {
+        println("Exception: ", e);
+    }
+};
+
+var n = ref 1;
+
+while (*n <= 10) {
+    a(*n);
+    n = *n + 1;
+}

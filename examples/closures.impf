@@ -1,0 +1,12 @@
+// Testing closures and higher order functions
+var f = fun (a, res) {
+  res = fun (b, res) { res = a + b; };
+};
+
+var f2 = ref 0; // init to something, uninitialized vars not supported
+var r = ref 0;
+f(1, f2);
+*f2(2, r);
+
+println(*r);
+if (*r == 3) println("OK"); else println("Fail");

@@ -1,0 +1,9 @@
+// Creating, writing to, and dereferencing memory cells
+var x = ref 0;
+
+while (*x < 10) {
+  if (*x % 2 == 0) print (*x, " is even"); 
+  else print(*x, " is odd");
+  println("");
+  x = *x + 1;
+}
